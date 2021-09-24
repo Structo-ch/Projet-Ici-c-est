@@ -2,10 +2,6 @@
 
 > Projet pilote de page d'informations pour la ville de Bienne
 
-[![NPM Version][npm-image]][npm-url]
-[![Linux Build][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
-
 ## Install
 
 ```bash
