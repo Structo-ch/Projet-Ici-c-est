@@ -19,3 +19,12 @@ npm run build-css
 ```bash
 npm run watch-css
 ```
+
+
+## TODO
+- [ ] mise à jour du fichier main.yml
+- [ ] Ajout de la font
+- [ ] marge
+- [ ] header
+- [ ] Alignement des puces
+- [ ] Ajout d'autres contenus
