@@ -16,16 +16,23 @@ body {
     text-align: left;
 }
 
-header, .header {
+header,
+.header {
     font-size: 1.5em;
     padding: .3em $padding-horizontal;
-    color: $white;
+    color: $main-primary-color;
     background-color: $bg-header-color;
     font-weight: normal;
 }
 
+article header {
+    background-color: $bg-header-article-color;
+    color: $black;
+}
 
-footer, .footer {
+
+footer,
+.footer {
     background: $white;
     padding: .3em ($padding-horizontal * 1.5);
 }

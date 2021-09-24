@@ -25,7 +25,8 @@ $main-primary-color: #DD0B15 !default;
 $main-primary-color-opacity: rgba($main-primary-color, .2);
 $text-primary-color: #000 !default;
 $bg-header-color: transparent;
-$bg-content-color: rgba($main-primary-color, .2);
+$bg-header-article-color: #F2F2F2;
+$bg-content-color: transparent;
 
 $white: #FFF !default;
 $black: #000 !default;
@@ -39,18 +40,18 @@ $margin-horizontal: 1em;
 $padding: .5em;
 $padding-vertical: .5em;
 $padding-horizontal: 1em;
-$radius: 0;
+$radius: 3px;
 
 $breadcrumb-font-size: $secondary-font-size;
 
 /* boutons */
-$btn-color: $main-primary-color;
-$btn-color-active: $main-primary-color;
-$btn-color-inactive: $white;
-$btn-bg-color: $main-primary-color;
+$btn-color: white;
+$btn-color-active: white;
+$btn-color-inactive: $main-primary-color;
+$btn-bg-color: white;
 $btn-padding: $padding-vertical $padding-horizontal;
 $btn-margin: 2px;
-$btn-border-color: $main-primary-color;
+$btn-border-color: #58585F;
 $btn-border-width: 1px;
 $btn-border-radius: $radius;
 $bt-transform: uppercase;
@@ -71,7 +72,7 @@ $language-margin: $margin;
 $language-bt-transform: $bt-transform;
 $language-bt-font-size: $secondary-font-size;
 
-$btn-bg-color-actif: $main-primary-color-opacity;
+$btn-bg-color-actif: $main-primary-color;
 
 /* boutons hover */
 $btn-bg-color-hover: $main-primary-color-opacity;

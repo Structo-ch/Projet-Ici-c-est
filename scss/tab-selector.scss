@@ -41,11 +41,12 @@ VERSION:	0.0.1
         .tabs-item-text {
             color: $btn-color-inactive;
             padding: $btn-padding;
+            border: solid;
             border-color: $btn-border-color;
             border-width: $btn-border-width;
             border-radius: $btn-border-radius;
             text-align: center;
-            background-color: $main-primary-color;
+            background-color: $btn-bg-color;
             font-size: $bt-font-size;
         }
 
@@ -62,6 +63,7 @@ VERSION:	0.0.1
             .tabs-item-text {
                 background-color: $btn-bg-color-actif;
                 color: $btn-color;
+                border-color: $btn-bg-color-actif;
             }
         }
 
