@@ -1,0 +1,45 @@
+html {
+    background: #FFF;
+    color: $text-primary-color;
+    font-family: $font-family;
+    font-size: $main-font-size;
+    line-height: $line-height;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 70ch;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+header, .header {
+    font-size: 1.5em;
+    padding: .3em $padding-horizontal;
+    color: $white;
+    background-color: $bg-header-color;
+    font-weight: normal;
+}
+
+
+footer, .footer {
+    background: $white;
+    padding: .3em ($padding-horizontal * 1.5);
+}
+
+iframe {
+    max-width: 100%;
+}
+
+figure {
+    margin: 2rem 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
