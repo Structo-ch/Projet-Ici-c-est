@@ -28,12 +28,13 @@ header,
 article header {
     background-color: $bg-header-article-color;
     color: $black;
+    padding: 0 $padding-horizontal .3em;
 }
 
 
 footer,
 .footer {
-    background: $white;
+    background: $bg-footer-color;
     padding: .3em ($padding-horizontal * 1.5);
 }
 
@@ -49,4 +50,8 @@ img {
     display: block;
     margin: auto;
     max-width: 100%;
+}
+
+ul {
+    padding-left: 1rem;
 }
