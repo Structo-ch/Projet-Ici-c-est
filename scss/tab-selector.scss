@@ -14,6 +14,8 @@ VERSION:	0.0.1
         margin-bottom: $margin-vertical;
     }
 
+    margin-top: 1em;
+
     .tabs {
         display: flex;
         flex-direction: row;
@@ -48,6 +50,7 @@ VERSION:	0.0.1
             text-align: center;
             background-color: $btn-bg-color;
             font-size: $bt-font-size;
+            font-weight: bold;
         }
 
         &:first-of-type {

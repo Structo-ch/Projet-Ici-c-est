@@ -22,9 +22,9 @@ npm run watch-css
 
 
 ## TODO
-- [ ] mise à jour du fichier main.yml
+- [x] mise à jour du fichier main.yml
 - [ ] Ajout de la font
-- [ ] marge
+- [x] marge
 - [ ] header
-- [ ] Alignement des puces
+- [x] Alignement des puces
 - [ ] Ajout d'autres contenus

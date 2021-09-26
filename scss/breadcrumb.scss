@@ -10,8 +10,8 @@ VERSION:	0.0.1
     font-weight: normal;
     text-transform: uppercase;
     color: $black;
-    margin: $padding-vertical 0;
-    padding: .3em ($padding-horizontal * 1.5);
+    margin: 2rem 0 0rem;
+    padding: .3em 0;
     font-size: $breadcrumb-font-size;
 
     a {
@@ -29,11 +29,11 @@ VERSION:	0.0.1
 
     .breadcrumb-item {
         font-weight: 300;
-        text-decoration:none;
+        text-decoration: none;
         color: $main-primary-color;
-    
+
         &.active {
-            font-weight: bold;
+            color: $grey;
         }
     }
 }

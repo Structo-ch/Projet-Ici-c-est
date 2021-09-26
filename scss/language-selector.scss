@@ -9,17 +9,18 @@ VERSION:	0.0.1
 -------------------------------------------------------------------*/
 
 .language-selector {
-    @if $radius !=0 {
-        padding: .3em $padding-horizontal;
+    @if $language-bt-radius !=0 {
+        padding: 0 $padding-horizontal .3em;
     }
 
     .main {
         .lang {
             display: flex;
             flex-direction: row;
-            margin: 0;
+            margin: 0 4rem;
             padding: 0;
             font-size: $language-bt-font-size;
+            font-weight: bold;
 
             .lang-item {
                 list-style-type: none;
@@ -29,7 +30,7 @@ VERSION:	0.0.1
                 background-color: $language-bg-bt-color;
                 border-radius: $language-bt-radius;
 
-                @if $radius !=0 {
+                @if $language-bt-radius !=0 {
                     margin: $language-margin;
                 }
 
