@@ -1,0 +1,80 @@
+/*!------------------------------------------------------------------
+[VARIABLES STYLESHEET]
+PROJECT:	Ici c'est
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+// Fonts
+$font-family: Roboto,
+sans-serif;
+$code-font-family: SFMono-Regular,
+Consolas,
+Liberation Mono,
+Menlo,
+monospace;
+$line-height: 1.2;
+$main-font-size: 1em;
+$secondary-font-size: .75em;
+
+// Colors
+$main-primary-color: #DD0B15 !default;
+$main-primary-color-opacity: rgba($main-primary-color, .2);
+$text-primary-color: #000 !default;
+$bg-header-color: transparent;
+$bg-header-article-color: #F2F2F2;
+$bg-content-color: transparent;
+
+$white: #FFF !default;
+$black: #000 !default;
+$grey: #C9C5D1 !default;
+
+// margin, padding, radius
+$margin: .5em;
+$margin-vertical: .5em;
+$margin-horizontal: 1em;
+
+$padding: .5em;
+$padding-vertical: .5em;
+$padding-horizontal: 1em;
+$radius: 3px;
+
+$breadcrumb-font-size: $secondary-font-size;
+
+/* boutons */
+$btn-color: white;
+$btn-color-active: white;
+$btn-color-inactive: $main-primary-color;
+$btn-bg-color: white;
+$btn-padding: $padding-vertical $padding-horizontal;
+$btn-margin: 2px;
+$btn-border-color: #58585F;
+$btn-border-width: 1px;
+$btn-border-radius: $radius;
+$bt-transform: uppercase;
+$bt-font-size: $secondary-font-size;
+
+
+/* language */
+$language-bg-bt-color: transparent;
+$language-bg-bt-color-active: $main-primary-color;
+$language-bg-bt-color-opacity: rgba($language-bg-bt-color-active, .2);
+$language-bt-color: $main-primary-color;
+$language-bt-color-active: white;
+$language-bt-padding: .5em;
+$language-bt-radius: $radius;
+$language-btn-border-width: 1px;
+$language-btn-border-color: #58585F;
+$language-margin: $margin;
+$language-bt-transform: $bt-transform;
+$language-bt-font-size: $secondary-font-size;
+
+$btn-bg-color-actif: $main-primary-color;
+
+/* boutons hover */
+$btn-bg-color-hover: $main-primary-color-opacity;
+
+$btn-border-color-hover: $main-primary-color-opacity;

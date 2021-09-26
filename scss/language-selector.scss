@@ -1,0 +1,78 @@
+/*!------------------------------------------------------------------
+[LANGUAGE-SELECTOR STYLESHEET]
+PROJECT:	Ici c'est
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+
+.language-selector {
+    @if $radius !=0 {
+        padding: .3em $padding-horizontal;
+    }
+
+    .main {
+        .lang {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            font-size: $language-bt-font-size;
+
+            .lang-item {
+                list-style-type: none;
+                flex-grow: 5;
+                margin: 0;
+                text-align: center;
+                background-color: $language-bg-bt-color;
+                border-radius: $language-bt-radius;
+
+                @if $radius !=0 {
+                    margin: $language-margin;
+                }
+
+                border: solid;
+                border-width: $language-btn-border-width;
+                border-color: $language-btn-border-color;
+                border-left-width: calc(#{$language-btn-border-width} / 2);
+                border-right-width: calc(#{$language-btn-border-width} / 2);
+
+                &:first-of-type {
+                    border-left-width: $language-btn-border-width;
+                }
+
+                &:last-of-type {
+                    border-right-width: $language-btn-border-width;
+                }
+
+                .lang-item-text {
+                    padding: $language-bt-padding;
+                    color: $language-bt-color;
+                    text-transform: $language-bt-transform;
+                }
+
+                &.active {
+                    background-color: $language-bg-bt-color-active;
+
+                    .lang-item-text {
+                        color: $language-bt-color-active;
+                    }
+                }
+
+                &:hover {
+                    background-color: $language-bg-bt-color-opacity;
+
+                    .lang-item-text {
+                        color: $language-bg-bt-color-active;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

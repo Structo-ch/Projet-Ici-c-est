@@ -1,0 +1,39 @@
+/*!------------------------------------------------------------------
+[BREADCRUMB STYLESHEET]
+PROJECT:	Ici c'est
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/************************************** breadcrumb **************************************/
+
+.breadcrumb {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $black;
+    margin: $padding-vertical 0;
+    padding: .3em ($padding-horizontal * 1.5);
+    font-size: $breadcrumb-font-size;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    .breadcrumb-separator {
+        color: $main-primary-color;
+        font-weight: 300;
+    }
+
+    .breadcrumb-item {
+        font-weight: 300;
+        text-decoration:none;
+        color: $main-primary-color;
+    
+        &.active {
+            font-weight: bold;
+        }
+    }
+}

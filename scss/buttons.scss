@@ -1,0 +1,43 @@
+/*!------------------------------------------------------------------
+[BUTTONS STYLESHEET]
+PROJECT:	Ici c'est
+VERSION:	0.0.1
+-------------------------------------------------------------------*/
+
+/************************************** Boutons **************************************/
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    color: var($btn-bg-color);
+}
+
+.btn-primary:hover {
+    color: var($btn-bg-color-hover);
+}
+
+.btn-secondary {
+    color: var($btn-bg-color);
+}
+
+.btn-secondary:hover {
+    color: var($btn-bg-color-hover);
+}
+
+.btn-link {
+
+}
+
+.btn-link:hover {
+
+}
