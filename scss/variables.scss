@@ -9,7 +9,7 @@ VERSION:	0.0.1
 -------------------------------------------------------------------*/
 
 // Fonts
-$font-family: Roboto,
+$font-family: 'Fira Sans',
 sans-serif;
 $code-font-family: SFMono-Regular,
 Consolas,
@@ -21,17 +21,18 @@ $main-font-size: 1rem;
 $secondary-font-size: .75rem;
 
 // Colors
+$white: #FFF !default;
+$black: #000 !default;
+$grey: #58585F !default;
+
 $main-primary-color: #DD0B15 !default;
 $main-primary-color-opacity: rgba($main-primary-color, .2);
 $text-primary-color: #000 !default;
-$bg-header-color: transparent;
+$bg-header-color: $white;
 $bg-header-article-color: #F2F2F2;
 $bg-footer-color: #F2F2F2;
 $bg-content-color: transparent;
 
-$white: #FFF !default;
-$black: #000 !default;
-$grey: #58585F !default;
 
 // margin, padding, radius
 $margin: .5em;
@@ -79,3 +80,6 @@ $btn-bg-color-actif: $main-primary-color;
 $btn-bg-color-hover: $main-primary-color-opacity;
 
 $btn-border-color-hover: $main-primary-color-opacity;
+
+/* footer */
+$footer-font-size: .75rem;

@@ -17,12 +17,14 @@ VERSION:	0.0.1
 /* boutons */
 /* language */
 /* boutons hover */
+/* footer */
 /*!------------------------------------------------------------------
 [TYPOGRAPHIE STYLESHEET]
 PROJECT:	Ici c'est
 VERSION:	0.0.1
 -------------------------------------------------------------------*/
 /************************************** typographie **************************************/
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic);
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -82,10 +84,18 @@ h6 {
 html {
   background: #FFF;
   color: #000;
-  font-family: Roboto, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   overflow-y: scroll; }
+
+@media screen and (min-width: 625px) {
+  html {
+    background: url("/public/images/background-biel.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; } }
 
 body {
   margin: 0 auto;
@@ -100,16 +110,33 @@ header,
   font-size: 1.5em;
   padding: 0.3em 1em;
   color: #DD0B15;
-  background-color: transparent;
+  background-color: #FFF;
   font-weight: normal; }
 
 article header {
   background-color: #F2F2F2;
   color: #000;
-  padding: 0 1em 0.3em; }
+  padding: 0 1em 2.5rem;
+  overflow: hidden;
+  position: relative; }
+  article header::after {
+    content: "";
+    width: 100%;
+    transform: rotate(-1.5deg);
+    position: absolute;
+    height: 17px;
+    display: block;
+    background: white;
+    left: 0;
+    right: 0;
+    bottom: -9px; }
+
+article {
+  background: white; }
 
 footer,
 .footer {
+  font-size: 0.75rem;
   background: #F2F2F2;
   padding: 0.3em 1.5em; }
 
@@ -126,6 +153,14 @@ img {
 
 ul {
   padding-left: 1rem; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.col {
+  width: 100%; }
 
 /*!------------------------------------------------------------------
 [BUTTONS STYLESHEET]
@@ -165,7 +200,7 @@ VERSION:	0.0.1
 /************************************** breadcrumb **************************************/
 .breadcrumb {
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: normal;
   color: #000;
   margin: 2rem 0 0rem;
   padding: .3em 0;
@@ -195,7 +230,7 @@ VERSION:	0.0.1
 .language-selector .main .lang {
   display: flex;
   flex-direction: row;
-  margin: 0 4rem;
+  margin: 0;
   padding: 0;
   font-size: 0.75rem;
   font-weight: bold; }
@@ -220,7 +255,8 @@ VERSION:	0.0.1
       color: #DD0B15;
       text-transform: capitalize; }
     .language-selector .main .lang .lang-item.active {
-      background-color: #DD0B15; }
+      background-color: #DD0B15;
+      border-color: #DD0B15; }
       .language-selector .main .lang .lang-item.active .lang-item-text {
         color: white; }
     .language-selector .main .lang .lang-item:hover {
@@ -286,3 +322,6 @@ VERSION:	0.0.1
 .content {
   background-color: transparent;
   padding: 0.5em 1.5em; }
+
+.chapeau {
+  font-weight: bold; }
