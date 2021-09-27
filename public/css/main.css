@@ -91,7 +91,7 @@ html {
 
 @media screen and (min-width: 625px) {
   html {
-    background: url("/public/images/background-biel.png");
+    background: url("../images/background-biel.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
