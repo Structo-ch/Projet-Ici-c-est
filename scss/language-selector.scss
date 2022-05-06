@@ -9,10 +9,6 @@ VERSION:	0.0.1
 -------------------------------------------------------------------*/
 
 .language-selector {
-    @if $language-bt-radius !=0 {
-        padding: 0 $padding-horizontal .3em;
-    }
-
     .main {
         .lang {
             display: flex;
@@ -21,35 +17,28 @@ VERSION:	0.0.1
             padding: 0;
             font-size: $language-bt-font-size;
             font-weight: bold;
+            justify-content: end;
+
+            @if $language-bt-radius !=0 {
+                gap: $language-margin;
+            }
 
             .lang-item {
                 list-style-type: none;
-                flex-grow: 5;
                 margin: 0;
                 text-align: center;
                 background-color: $language-bg-bt-color;
                 border-radius: $language-bt-radius;
-
-                @if $language-bt-radius !=0 {
-                    margin: $language-margin;
-                }
-
+                width: 2em;
+                height: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border: solid;
                 border-width: $language-btn-border-width;
-                border-color: $language-btn-border-color;
-                border-left-width: calc(#{$language-btn-border-width} / 2);
-                border-right-width: calc(#{$language-btn-border-width} / 2);
-
-                &:first-of-type {
-                    border-left-width: $language-btn-border-width;
-                }
-
-                &:last-of-type {
-                    border-right-width: $language-btn-border-width;
-                }
+                border-color: transparent;
 
                 .lang-item-text {
-                    padding: $language-bt-padding;
                     color: $language-bt-color;
                     text-transform: $language-bt-transform;
                 }

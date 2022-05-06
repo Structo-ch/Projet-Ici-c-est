@@ -33,6 +33,10 @@ $bg-header-article-color: #F2F2F2;
 $bg-footer-color: #F2F2F2;
 $bg-content-color: transparent;
 
+$tab-color-1: #4ABCA1;
+$tab-color-2: #E26486;
+$tab-color-3: #6F6FE2;
+
 
 // margin, padding, radius
 $margin: .5em;
@@ -42,17 +46,17 @@ $margin-horizontal: 1em;
 $padding: .5em;
 $padding-vertical: .5em;
 $padding-horizontal: 1em;
-$radius: 3px;
+$radius: 0;
 
 $breadcrumb-font-size: $secondary-font-size;
 
 /* boutons */
 $btn-color: white;
 $btn-color-active: white;
-$btn-color-inactive: $main-primary-color;
+$btn-color-inactive: white;
 $btn-bg-color: white;
-$btn-padding: $padding-vertical $padding-horizontal;
-$btn-margin: 2px;
+$btn-padding: $padding-vertical 3em;
+$btn-gap: 4px;
 $btn-border-color: $grey;
 $btn-border-width: 1px;
 $btn-border-radius: $radius;
@@ -64,10 +68,10 @@ $bt-font-size: $secondary-font-size;
 $language-bg-bt-color: white;
 $language-bg-bt-color-active: $main-primary-color;
 $language-bg-bt-color-opacity: rgba($language-bg-bt-color-active, .2);
-$language-bt-color: $main-primary-color;
+$language-bt-color: $grey;
 $language-bt-color-active: white;
-$language-bt-padding: .2em .5em;
-$language-bt-radius: 0;
+$language-bt-padding: .3em;
+$language-bt-radius: 50%;
 $language-btn-border-width: 1px;
 $language-btn-border-color: $grey;
 $language-margin: $margin;
