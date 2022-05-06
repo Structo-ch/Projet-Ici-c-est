@@ -45,19 +45,6 @@ article header {
     padding: 0 $padding-horizontal 2.5rem;
     overflow: hidden;
     position: relative;
-
-    &::after {
-        content: "";
-        width: 100%;
-        transform: rotate(-1.5deg);
-        position: absolute;
-        height: 17px;
-        display: block;
-        background: white;
-        left: 0;
-        right: 0;
-        bottom: -9px;
-    }
 }
 
 article {

@@ -10,23 +10,24 @@ VERSION:	0.0.1
 
 .tabs-selector {
     @if $radius !=0 {
-        padding: 0 ($padding-horizontal * 1.5);
         margin-bottom: $margin-vertical;
     }
 
-    margin-top: 1em;
+    position: relative;
+    overflow:scroll;
 
     .tabs {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         margin: 0;
         padding: 0;
+        padding-bottom: 3px;
+        overflow-y: scroll;
+        overflow-y: overlay;
     }
 
     .tabs-item {
-        flex-grow: 3;
-        margin: $btn-margin;
+        // flex-grow: 3;
 
         @if $radius==0 {
             margin-bottom: 0;
@@ -37,20 +38,53 @@ VERSION:	0.0.1
         }
 
         text-transform: $bt-transform;
-
+        padding: $btn-padding;
         list-style-type: none;
+        flex: 1 0 auto;
+        text-align: center;
+
+        &.active::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            content: "";
+            color: transparent;
+        }
+
+        &:nth-child(3n+0),
+        &:nth-child(3n+0)::after {
+            background-color: $tab-color-1;
+        }
+
+        &:nth-child(3n+1),
+        &:nth-child(3n+1)::after {
+            background-color: $tab-color-2;
+        }
+
+        &:nth-child(3n+2),
+        &:nth-child(3n+2)::after {
+            background-color: $tab-color-3;
+        }
+
+        transition: all .3s ease;
+
+        &:hover {
+            opacity: .8;
+
+            .tabs-item-text {
+                color: $btn-color-active;
+            }
+        }
 
         .tabs-item-text {
-            color: $btn-color-inactive;
-            padding: $btn-padding;
-            border: solid;
-            border-color: $btn-border-color;
-            border-width: $btn-border-width;
-            border-radius: $btn-border-radius;
             text-align: center;
-            background-color: $btn-bg-color;
             font-size: $bt-font-size;
             font-weight: bold;
+            display: inline;
+            color: $btn-color-inactive;
+            transition: color .3s ease;
         }
 
         &:first-of-type {
@@ -61,21 +95,6 @@ VERSION:	0.0.1
             margin-right: 0;
         }
 
-        &.active {
-
-            .tabs-item-text {
-                background-color: $btn-bg-color-actif;
-                color: $btn-color;
-                border-color: $btn-bg-color-actif;
-            }
-        }
-
-        &:hover {
-            .tabs-item-text {
-                background-color: $btn-bg-color-hover;
-                color: $btn-color-active;
-            }
-        }
     }
 
     a {
