@@ -24,6 +24,7 @@ $secondary-font-size: .75rem;
 $white: #FFF !default;
 $black: #000 !default;
 $grey: #58585F !default;
+$grey-dark: #8E8789 !default;
 
 $main-primary-color: #DD0B15 !default;
 $main-primary-color-opacity: rgba($main-primary-color, .2);
@@ -33,9 +34,13 @@ $bg-header-article-color: #F2F2F2;
 $bg-footer-color: #F2F2F2;
 $bg-content-color: transparent;
 
-$tab-color-1: #4ABCA1;
-$tab-color-2: #E26486;
-$tab-color-3: #6F6FE2;
+$tab-color: true;
+$tab-color-1: if($tab-color, #4ABCA1, #C6C6C6);
+$tab-color-2: if($tab-color, #E26486, #C6C6C6);
+$tab-color-3: if($tab-color, #6F6FE2, #C6C6C6);
+$tab-color-4: if($tab-color, #835D4F, #C6C6C6);
+$tab-color-5: if($tab-color, #E28E6F, #C6C6C6);
+
 
 
 // margin, padding, radius
